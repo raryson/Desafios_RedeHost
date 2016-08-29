@@ -1,0 +1,21 @@
+img {
+    padding-top: 1%;
+    width:100%;
+}
+h1{
+    text-align: center;
+    font-size:500%;
+}
+.box{
+    text-align: right;
+}
+.botao{
+    float: center;
+    font-size:300%;
+}
+p{
+    font-size:300%;
+}
+.date{
+    font-size:300%;
+}

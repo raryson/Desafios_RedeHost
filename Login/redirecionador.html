@@ -1,0 +1,51 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+    <h1>As lhamas estão trabalhando!</h1>
+                <div id="myProgress">
+        <div id="myBar">
+            <div id="label">0%</div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </center>
+    <script>
+               
+                var timeoutID;
+                function move() {
+                    var elem = document.getElementById("myBar"); 
+                    var width = 0;
+                    var id = setInterval(frame, 10);
+                    function frame() {
+                        if (width >= 100) {
+                            clearInterval(id);
+                        } else {
+                            width++; 
+                            elem.style.width = width + '%'; 
+                            document.getElementById("label").innerHTML = width * 1 + '%';
+                        }
+                    }
+                }
+                move();
+                    function redirecionar(){
+    	               window.location.href = 'logado.php'
+                    }
+                    function delayedAlert() {
+                    timeoutID = window.setTimeout(redirecionar, 2000);
+                    }
+                    delayedAlert();
+                    
+        </script>
+</body>
+</html>

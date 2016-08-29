@@ -1,0 +1,576 @@
+<html>
+
+
+
+
+
+
+
+<head>
+
+
+
+	<title>Horóscopo</title>
+
+
+
+	<meta charset="UTF-8">
+
+
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+
+	<link href="css/style2.css" rel="stylesheet" type="text/css">
+
+
+
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+
+	<script>
+
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+
+
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+
+
+
+
+
+  ga('create', 'UA-80772039-1', 'auto');
+
+
+
+  ga('send', 'pageview');
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+	<script>
+
+
+ 
+
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".oe" )
+    .append(  data.pageview );
+
+}, "json" );
+
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".capricornio" )
+.append(  data.capricornio );
+}, "json" );
+
+
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".aries" )
+.append(  data.aries );
+}, "json" );
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".peixes" )
+	.append( data.peixes );
+}, "json" );
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".aquario" )
+	.append( data.aquario );
+}, "json" );
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".libra" )
+	.append(  data.libra );
+}, "json" );
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".leao" )
+.append(  data.leao );
+}, "json" );
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".touro" )
+	.append( data.touro );
+}, "json" );
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".sagitario" )
+.append(  data.sagitario );
+}, "json" );
+ $.get( "contadores/signos.json", function( data ) {
+  $( ".cancer" )
+	.append(data.cancer );
+}, "json" );
+ $.get( "contadores/signos.json", function( data ) {
+ $( ".virgem" )
+	.append(  data.virgem );
+}, "json" );
+  $.get( "contadores/signos.json", function( data ) {
+  $( ".escorpiao" )
+	.append( data.escorpiao );
+}, "json" );
+  $.get( "contadores/signos.json", function( data ) {
+  $( ".gemeos" )
+	.append( data.gemeos );
+}, "json" );
+ 
+ 
+
+
+
+</script>
+
+
+	<div class="row">
+
+
+
+
+		<div class="foo">
+
+
+
+			<span class="letter" data-letter="H">H</span>
+
+
+
+			<span class="letter" data-letter="O">O</span>
+
+
+
+			<span class="letter" data-letter="R">R</span>
+
+
+
+			<span class="letter" data-letter="Ó">Ó</span>
+
+
+
+			<span class="letter" data-letter="S">S</span>
+
+
+
+			<span class="letter" data-letter="C">C</span>
+
+
+
+			<span class="letter" data-letter="O">O</span>
+
+
+
+			<span class="letter" data-letter="P">P</span>
+
+
+
+			<span class="letter" data-letter="O">O</span>
+
+
+
+		</div>
+
+
+
+	</div>
+
+
+
+	<div id="StefTastan">
+
+
+
+
+
+
+
+		<!-- pokeball container -->
+
+
+
+		<div id="moving-container">
+
+
+
+			<div id="pokeball-container">
+
+
+
+				<!-- pokeball -->
+
+
+
+				<div id="pokeball">
+
+
+
+					<div class="pokeball-details"></div>
+
+
+
+				</div>
+
+
+
+			</div>
+
+
+
+		</div>
+
+
+
+
+
+
+
+		<!-- charmander -->
+
+
+
+		<div id="charmander">
+
+
+
+			<div id="arms"></div>
+
+
+
+			<div id="feet"></div>
+
+
+
+			<div id="body">
+
+
+
+				<div id="eyes"></div>
+
+
+
+				<div id="pupils"></div>
+
+
+
+				<div id="nostrils"></div>
+
+
+
+				<div id="mouth"></div>
+
+
+
+				<div id="belly"></div>
+
+
+
+			</div>
+
+
+
+			<div id="tail"></div>
+
+
+
+			<div id="flame"></div>
+
+
+
+		</div>
+
+
+
+
+
+
+
+		<!-- bulbasaur -->
+
+
+
+		<div id="bulbasaur">
+
+
+
+			<div id="head">
+
+
+
+				<div id="eyes"></div>
+
+
+
+				<div id="pupils"></div>
+
+
+
+				<div id="nostrils"></div>
+
+
+
+				<div class="mouth"></div>
+
+
+
+			</div>
+
+
+
+			<div class="ears"></div>
+
+
+
+			<div id="body">
+
+
+
+				<div class="spots spot1"></div>
+
+
+
+				<div class="spots spot2"></div>
+
+
+
+				<div class="spots spot3"></div>
+
+
+
+			</div>
+
+
+
+			<div id="front-feet"></div>
+
+
+
+			<div id="back-feet"></div>
+
+
+
+			<div id="bulb"></div>
+
+
+
+		</div>
+
+
+
+
+
+
+
+		<!-- squirtle -->
+
+
+
+		<div id="squirtle">
+
+
+
+			<div id="arms"></div>
+
+
+
+			<div id="feet"></div>
+
+
+
+			<div id="head">
+
+
+
+				<div id="eyes"></div>
+
+
+
+				<div id="pupils"></div>
+
+
+
+				<div id="nostrils"></div>
+
+
+
+				<div id="mouth"></div>
+
+
+
+			</div>
+
+
+
+			<div id="body"></div>
+
+
+
+			<div id="shell"></div>
+
+
+
+			<div id="tail"></div>
+
+
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+	</div>
+    <div class="row">
+        <div class="row">
+            
+       <center><h1>Estatisticas de acesso:</h1></center>
+       </div>
+        <div class="col-md-4 col-md-offset-4">
+         
+		<table class="table table-bordered">
+	
+		<tr>
+			<td>PageView</td>
+			<td class="oe"></td>
+		</tr>
+		<tr>
+			<td>Capricornio</td>
+			<td class="capricornio"></td>
+		</tr>
+		<tr>
+			<td>Aries</td>
+			<td class="aries"></td>
+		</tr>
+		<tr>
+			<td>Peixes</td>
+			<td class="peixes"></td>
+		</tr>
+		<tr>
+			<td>Aquario</td>
+			<td class="aquario"></td>
+		</tr>
+		<tr>
+			<td>Libra</td>
+			<td class="libra"></td>
+		</tr>
+		<tr>
+			<td>Leão</td>
+			<td class="leao"></td>
+		</tr>
+		<tr>
+			<td>Touro</td>
+			<td class="touro"></td>
+		</tr>
+		<tr>
+			<td>Sagitario</td>
+			<td class="sagitario"></td>
+		</tr>
+		<tr>
+			<td>Cancer</td>
+			<td class="cancer"></td>
+		</tr>
+		<tr>
+			<td>Virgem</td>
+			<td class="virgem"></td>
+		</tr>
+		<tr>
+			<td>Escorpião</td>
+			<td class="escorpiao"></td>
+		</tr>
+		<tr>
+			<td>Gemeos</td>
+			<td class="gemeos"></td>
+		</tr>
+
+		
+			
+			
+	
+	</table>
+	</div>	
+	</div>
+	<div class="row">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+<center>
+		<button id="home" class="btn btn-default">Voltar para a pagina inicial.</button>
+	</center>
+	</div>
+
+
+	
+	<br>
+	<br>
+
+
+
+
+	<script src="script2.js"></script>
+
+
+</body>
+
+
+
+
+
+
+
+</html>

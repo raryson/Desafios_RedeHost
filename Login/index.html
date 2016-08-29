@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h1>Tela de Login do Raryson</h1>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form action = "logar.php" method="post">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Usuário</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+                </div>
+                <center>
+                <button type="submit" class="btn btn-default">Acessar</button>
+                <button type="button" class="btn btn-default" onclick="vaifera()">Criar Conta</button>
+                </center>
+            </form>
+        </div>
+        <script>
+            function vaifera(){window.location.href = "register.html";}
+
+        </script>
+
+    </body>
+
+</html>

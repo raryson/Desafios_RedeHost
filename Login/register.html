@@ -1,0 +1,43 @@
+<html>
+
+    <head>
+        <title>Criado a sua conta</title>
+        <meta charset="UTF-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h1>Criando a sua conta:</h1>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form action = "criarconta.php" method="post">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Usuário</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Confirme a sua senha:</label>
+                    <input type="password" class="form-control" id="senha2" name="senha2" placeholder="A senha novamente">
+                </div>
+                 <div class="form-group">
+                    <label for="exampleInputEmail1">Endereço de e-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+                <center>
+                
+                <button type="submit" class="btn btn-default">Criar Conta</button>
+                </center>
+            </form>
+        </div>
+        
+    </body>
+
+</html>
