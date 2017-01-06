@@ -1,0 +1,102 @@
+@font-face{
+	font-family: Instruction;
+	src: url(fonts/Instruction.otf);
+}
+
+.intro-text{
+    margin-bottom: 10%;
+	font-family: 'Instruction', cursive;
+	font-size: 42px;
+}
+button{
+    border: none;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+	border-radius: 10px;
+	font-family: 'Instruction', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.new
+{
+	background-color: #422626;
+	border-bottom: 5px solid #6F5E5C;
+	text-shadow: 0px -2px #422626;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px, 5px);
+	border-bottom: 1px solid;
+}
+
+
+  /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+		.intro-text
+		{
+			font-size: 100px;
+		}
+		.action-button{
+			padding: 10px 40px;
+			font-size: 80px;
+			margin-bottom: 50px;
+		}
+
+		.action-button:active
+		{
+			transform: translate(0px,20px);
+		-webkit-transform: translate(0px, 20px);
+			border-bottom: 5px solid;
+		}
+    }
+
+  
