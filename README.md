@@ -12,4 +12,6 @@ A tela de login nada mais é do que um sistema de login em PHP na qual quando o 
 # Signos
 
 O projeto Signos teve o objetivo de retornar a o usuário qual signo ele possui, com mais informações sobre o signo.<br>
-Vale lembrar que o projeto é inteiro responsivo e utiliza HTML, JavaScript e PHP.
+Vale lembrar que o projeto é inteiro responsivo e utiliza HTML, JavaScript e PHTey.
+
+BOOOORING
